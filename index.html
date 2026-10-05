@@ -4,184 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Dr Reyn Pandey</title>
+  <title>Dr Reyn Pandey | Dermatology Resident Doctor</title>
 
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, sans-serif;
-      color: #123;
-      background: #eef9ff;
+      background: linear-gradient(135deg, #eaf7ff, #ffffff);
+      color: #17324d;
+      text-align: center;
+      min-height: 100vh;
     }
 
-    /* Navigation */
     nav {
-      background: white;
-      padding: 15px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background: #0b6fa4;
+      padding: 15px;
       position: sticky;
       top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      color: #075985;
+      z-index: 10;
     }
 
     nav a {
+      color: white;
       text-decoration: none;
-      color: #164e63;
-      margin-left: 18px;
-      font-weight: 600;
+      margin: 0 12px;
+      font-weight: bold;
     }
 
-    /* Home */
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .hero {
-      min-height: 90vh;
-      padding: 60px 7%;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(
-        135deg,
-        #dff6ff,
-        #ffffff
-      );
+      padding: 60px 20px 40px;
     }
 
-    .hero-container {
-      max-width: 1100px;
-      width: 100%;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      margin-bottom: 25px;
     }
 
-    .hero-text h1 {
-      font-size: 60px;
+    h1 {
+      font-size: 38px;
+      margin-bottom: 12px;
       color: #075985;
-      margin-bottom: 10px;
     }
 
-    .hero-text h2 {
-      font-size: 27px;
-      font-weight: normal;
-      color: #334155;
-      margin-bottom: 20px;
-    }
-
-    .hero-text p {
-      font-size: 18px;
-      line-height: 1.7;
+    .subtitle {
+      font-size: 21px;
+      color: #456;
       margin-bottom: 25px;
     }
 
     .button {
       display: inline-block;
-      padding: 13px 25px;
-      background: #0284c7;
+      background: #0b6fa4;
       color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
+      margin: 8px;
     }
 
     .button:hover {
-      background: #0369a1;
-    }
-
-    /* Photo */
-    .photo-container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .photo-container img {
-      width: 380px;
-      height: 470px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 25px;
-      border: 7px solid white;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.18);
-    }
-
-    /* Sections */
-    section {
-      padding: 70px 7%;
-      background: white;
-    }
-
-    section h2 {
-      color: #075985;
-      font-size: 35px;
-      margin-bottom: 20px;
-    }
-
-    section p {
-      max-width: 850px;
-      font-size: 17px;
-      line-height: 1.8;
-    }
-
-    /* Footer */
-    footer {
       background: #075985;
-      color: white;
-      text-align: center;
-      padding: 25px;
     }
 
-    /* Mobile */
-    @media (max-width: 800px) {
+    section {
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 35px 25px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
 
-      nav {
-        flex-direction: column;
-        gap: 10px;
+    h2 {
+      color: #075985;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 25px;
+      background: #0b6fa4;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
       }
 
       nav a {
-        margin-left: 8px;
-        margin-right: 8px;
+        margin: 0 6px;
         font-size: 14px;
-      }
-
-      .hero {
-        padding: 45px 6%;
-      }
-
-      .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero-text h1 {
-        font-size: 45px;
-      }
-
-      .hero-text h2 {
-        font-size: 22px;
-      }
-
-      .photo-container img {
-        width: 90%;
-        max-width: 380px;
-        height: 430px;
       }
     }
   </style>
@@ -189,12 +131,67 @@
 
 <body>
 
-  <!-- Navigation -->
   <nav>
-    <div class="logo">Dr Reyn Pandey</div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <div>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <
+  <section class="hero" id="home">
+
+    <img
+      src="reyn-pandey-profile.jpg"
+      alt="Dr Reyn Pandey"
+      class="profile-photo"
+    >
+
+    <h1>Dr Reyn Pandey</h1>
+
+    <p class="subtitle">
+      Dermatology Resident Doctor
+    </p>
+
+    <a class="button" href="#about">About Me</a>
+    <a class="button" href="#contact">Contact</a>
+
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am Dr Reyn Pandey, a Dermatology Resident Doctor.
+      This website is my personal professional profile and a place
+      to share my interests, work and dermatology-related information.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Interests</h2>
+    <p>
+      Dermatology • Medical Education • Clinical Practice •
+      Photography • Travel • Piano
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      You can connect with me through Facebook.
+    </p>
+
+    <a
+      class="button"
+      href="https://www.facebook.com/share/19X4NkC9EV/"
+      target="_blank"
+    >
+      Facebook
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Dr Reyn Pandey
+  </footer>
+
+</body>
+</html>
