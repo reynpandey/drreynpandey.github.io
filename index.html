@@ -7,13 +7,17 @@
   <title>Dr. Reyn Pandey | Dermatology Resident Doctor</title>
 
   <meta name="description"
-        content="Dr. Reyn Pandey, Dermatology Resident Doctor. Personal profile, professional journey, dermatology, travel, technology and piano.">
+        content="Dr. Reyn Pandey — Dermatology Resident Doctor from Nepal. Sharing professional interests, travel, technology, music and personal experiences.">
 
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -23,6 +27,7 @@
       line-height: 1.6;
     }
 
+    /* HEADER */
     header {
       background: linear-gradient(135deg, #0b5d7a, #168aad);
       color: white;
@@ -36,22 +41,23 @@
       object-fit: cover;
       border-radius: 50%;
       border: 5px solid white;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     header h1 {
       font-size: 34px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     header p {
       font-size: 18px;
     }
 
+    /* NAVIGATION */
     nav {
       background: white;
       text-align: center;
-      padding: 15px;
+      padding: 15px 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       position: sticky;
       top: 0;
@@ -69,13 +75,14 @@
       color: #168aad;
     }
 
+    /* MAIN SECTIONS */
     section {
       max-width: 900px;
       margin: 40px auto;
-      padding: 30px 25px;
+      padding: 32px 28px;
       background: white;
       border-radius: 15px;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 3px 15px rgba(0,0,0,0.07);
     }
 
     section h2 {
@@ -88,6 +95,31 @@
       margin-bottom: 12px;
     }
 
+    /* WELCOME */
+    .welcome {
+      text-align: center;
+    }
+
+    .welcome h2 {
+      font-size: 30px;
+    }
+
+    .welcome p {
+      font-size: 17px;
+      max-width: 700px;
+      margin: 0 auto 12px;
+    }
+
+    /* VIDEOS */
+    .video-card {
+      margin-top: 30px;
+    }
+
+    .video-card h3 {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
     .video-container {
       position: relative;
       width: 100%;
@@ -95,7 +127,7 @@
       height: 0;
       overflow: hidden;
       border-radius: 12px;
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     .video-container iframe {
@@ -107,21 +139,20 @@
       border: 0;
     }
 
-    .video-card {
-      margin-bottom: 35px;
+    /* INTERESTS */
+    .interests p {
+      margin: 8px 0;
+      font-size: 17px;
     }
 
-    .video-card h3 {
-      color: #333;
-      margin-bottom: 8px;
-    }
-
+    /* CONTACT */
     .contact-box {
       background: #eef7fa;
       padding: 20px;
       border-radius: 10px;
     }
 
+    /* FOOTER */
     footer {
       text-align: center;
       background: #0b5d7a;
@@ -130,9 +161,24 @@
       margin-top: 50px;
     }
 
+    /* MOBILE */
     @media (max-width: 600px) {
+
+      header {
+        padding: 40px 15px;
+      }
+
       header h1 {
-        font-size: 27px;
+        font-size: 28px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 130px;
       }
 
       nav a {
@@ -144,90 +190,118 @@
         margin: 25px 12px;
         padding: 25px 18px;
       }
+
+      section h2 {
+        font-size: 25px;
+      }
     }
   </style>
 </head>
 
+
 <body>
 
-  <!-- HEADER -->
+  <!-- PROFILE HEADER -->
   <header>
+
     <!--
-      IMPORTANT:
-      Replace "profile.jpg" with the exact filename of your profile photo.
+      Replace profile.jpg with the exact filename
+      of your profile photograph.
     -->
-    <img src="profile.jpg" alt="Dr. Reyn Pandey" class="profile-photo">
+    <img
+      src="profile.jpg"
+      alt="Dr. Reyn Pandey"
+      class="profile-photo"
+    >
 
     <h1>Dr. Reyn Pandey</h1>
+
     <p>Dermatology Resident Doctor</p>
+
   </header>
 
 
   <!-- NAVIGATION -->
   <nav>
+
+    <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#videos">Videos</a>
     <a href="#interests">Interests</a>
     <a href="#contact">Contact</a>
+
   </nav>
+
+
+  <!-- HOME / WELCOME -->
+  <section id="home" class="welcome">
+
+    <h2>Welcome</h2>
+
+    <p>
+      Welcome to my personal profile.
+    </p>
+
+    <p>
+      I am Dr. Reyn Pandey, a Dermatology Resident Doctor.
+    </p>
+
+    <p>
+      Through this platform, I share my professional journey,
+      knowledge, interests, and experiences.
+    </p>
+
+  </section>
 
 
   <!-- ABOUT -->
   <section id="about">
+
     <h2>About Me</h2>
 
     <p>
-      I am a Dermatology Resident Doctor with an interest in dermatology,
-      medical education, technology, travel, and creativity.
+      My interests extend beyond medicine to travel, technology,
+      creativity, and music.
     </p>
 
     <p>
-      Through this platform, I aim to share my professional journey,
-      knowledge, interests, and experiences.
+      I enjoy learning, exploring new ideas, and sharing experiences
+      through this platform.
     </p>
 
-    <p>
-      I also enjoy exploring creativity, technology, travel, and playing
-      piano alongside medicine.
-    </p>
   </section>
 
 
   <!-- VIDEOS -->
   <section id="videos">
-    <h2>My Videos</h2>
+
+    <h2>Videos</h2>
 
     <p>
-      Explore some of my videos related to medicine, creativity, travel,
-      piano, and other interests.
+      A collection of selected videos from my interests and activities.
     </p>
 
 
     <!-- VIDEO 1 -->
     <div class="video-card">
 
-      <h3>My First Video</h3>
-
-      <p>
-        Add your YouTube video below.
-      </p>
+      <h3>Piano Performance</h3>
 
       <div class="video-container">
 
         <!--
-          REPLACE YOUR_VIDEO_ID WITH YOUR ACTUAL YOUTUBE VIDEO ID.
+          Replace YOUR_VIDEO_ID with your YouTube video ID.
 
           Example:
-          If your YouTube link is:
-          https://www.youtube.com/watch?v=ABC123XYZ
+          https://www.youtube.com/watch?v=ABC123
 
-          Then use:
-          https://www.youtube.com/embed/ABC123XYZ
+          becomes:
+          https://www.youtube.com/embed/ABC123
         -->
 
         <iframe
           src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-          title="Dr. Reyn Pandey Video"
+          title="Piano Performance"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
@@ -246,7 +320,7 @@
 
         <iframe
           src="https://www.youtube.com/embed/YOUR_SECOND_VIDEO_ID"
-          title="Dr. Reyn Pandey Video"
+          title="Another Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
@@ -259,9 +333,9 @@
 
 
   <!-- INTERESTS -->
-  <section id="interests">
+  <section id="interests" class="interests">
 
-    <h2>My Interests</h2>
+    <h2>Interests</h2>
 
     <p>🩺 Dermatology & Medical Education</p>
     <p>🎹 Piano & Music</p>
@@ -278,12 +352,18 @@
 
     <div class="contact-box">
 
-      <p><strong>Location:</strong> Khaireni, Devdaha, Rupandehi, Nepal</p>
-
-      <p><strong>Contact:</strong> 9860374471</p>
+      <p>
+        <strong>Location:</strong>
+        Khaireni, Devdaha, Rupandehi, Nepal
+      </p>
 
       <p>
-        Feel free to connect with me and follow my journey.
+        <strong>Contact:</strong>
+        9860374471
+      </p>
+
+      <p>
+        Feel free to connect with me.
       </p>
 
     </div>
@@ -294,9 +374,7 @@
   <!-- FOOTER -->
   <footer>
 
-    <p>
-      © 2026 Dr. Reyn Pandey. All rights reserved.
-    </p>
+    <p>© 2026 Dr. Reyn Pandey. All rights reserved.</p>
 
   </footer>
 
