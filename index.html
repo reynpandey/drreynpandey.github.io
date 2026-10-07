@@ -1,7 +1,15 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Dr Reyn Pandey | Dermatology Resident Doctor</title>  <meta name="description" content="Dr Reyn Pandey, Dermatology Resident Doctor. Medical education, dermatology awareness, travel and personal interests.">  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dr. Reyn Pandey | Dermatology Resident Doctor</title>
+
+  <meta name="description"
+        content="Dr. Reyn Pandey, Dermatology Resident Doctor. Personal profile, professional journey, dermatology, travel, technology and piano.">
+
+  <style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -10,16 +18,16 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #eaf7ff, #ffffff, #e8f4ff);
-      color: #1f2937;
+      background: #f5f8fb;
+      color: #222;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #0066a1, #008fc4);
+      background: linear-gradient(135deg, #0b5d7a, #168aad);
       color: white;
       text-align: center;
-      padding: 45px 20px;
+      padding: 50px 20px;
     }
 
     .profile-photo {
@@ -28,13 +36,12 @@
       object-fit: cover;
       border-radius: 50%;
       border: 5px solid white;
-      margin-bottom: 18px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
     }
 
     header h1 {
       font-size: 34px;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
     header p {
@@ -43,140 +50,255 @@
 
     nav {
       background: white;
-      padding: 15px;
       text-align: center;
+      padding: 15px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
     }
 
     nav a {
-      color: #0066a1;
+      color: #0b5d7a;
       text-decoration: none;
-      font-weight: bold;
       margin: 0 12px;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: #008fc4;
+      color: #168aad;
     }
 
     section {
       max-width: 900px;
-      margin: 35px auto;
-      padding: 30px;
-      background: rgba(255,255,255,0.92);
+      margin: 40px auto;
+      padding: 30px 25px;
+      background: white;
       border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
     }
 
-    h2 {
-      color: #0066a1;
-      margin-bottom: 15px;
-      font-size: 27px;
+    section h2 {
+      color: #0b5d7a;
+      margin-bottom: 18px;
+      font-size: 28px;
     }
 
-    .contact-item {
-      margin: 12px 0;
-      font-size: 17px;
+    section p {
+      margin-bottom: 12px;
     }
 
-    .contact-item strong {
-      color: #0066a1;
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-top: 20px;
     }
 
-    .facebook {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 11px 20px;
-      background: #1877f2;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
-    .facebook:hover {
-      opacity: 0.9;
+    .video-card {
+      margin-bottom: 35px;
+    }
+
+    .video-card h3 {
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .contact-box {
+      background: #eef7fa;
+      padding: 20px;
+      border-radius: 10px;
     }
 
     footer {
-      background: #0066a1;
-      color: white;
       text-align: center;
+      background: #0b5d7a;
+      color: white;
       padding: 25px 15px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 28px;
+        font-size: 27px;
       }
 
       nav a {
-        margin: 0 6px;
-        font-size: 14px;
+        display: inline-block;
+        margin: 5px 7px;
       }
 
       section {
-        margin: 20px 12px;
-        padding: 22px;
+        margin: 25px 12px;
+        padding: 25px 18px;
       }
     }
-  </style></head><body>  <header>
-    <img src="reyn-pandey-profile.jpg" alt="Dr Reyn Pandey" class="profile-photo"><h1>Dr Reyn Pandey</h1>
-<p>Dermatology Resident Doctor</p>
+  </style>
+</head>
 
-  </header>  <nav>
-    <a href="#home">Home</a>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <!--
+      IMPORTANT:
+      Replace "profile.jpg" with the exact filename of your profile photo.
+    -->
+    <img src="profile.jpg" alt="Dr. Reyn Pandey" class="profile-photo">
+
+    <h1>Dr. Reyn Pandey</h1>
+    <p>Dermatology Resident Doctor</p>
+  </header>
+
+
+  <!-- NAVIGATION -->
+  <nav>
     <a href="#about">About</a>
+    <a href="#videos">Videos</a>
+    <a href="#interests">Interests</a>
     <a href="#contact">Contact</a>
-  </nav>  <section id="home">
-    <h2>Welcome</h2>
+  </nav>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+
     <p>
-     Welcome to my personal profile. I am Reyn Pandey  
-     
+      I am a Dermatology Resident Doctor with an interest in dermatology,
+      medical education, technology, travel, and creativity.
+    </p>
 
-    </p><p style="margin-top:15px;">
-  
-</p>
+    <p>
+      Through this platform, I aim to share my professional journey,
+      knowledge, interests, and experiences.
+    </p>
 
-  </section>  <section id="about">
-    <h2>About Me</h2><p>
-  Dermatology Resident Doctor from Nepal 
-      Through this platform, I aim to share my professional journey, knowledge, interests, and experiences.
+    <p>
+      I also enjoy exploring creativity, technology, travel, and playing
+      piano alongside medicine.
+    </p>
+  </section>
 
-        
-</p>
 
-<p style="margin-top:15px;">
+  <!-- VIDEOS -->
+  <section id="videos">
+    <h2>My Videos</h2>
 
-</p>
+    <p>
+      Explore some of my videos related to medicine, creativity, travel,
+      piano, and other interests.
+    </p>
 
-  </section>  <section id="contact">
-    <h2>Contact</h2><div class="contact-item">
-  <strong>Address:</strong><br>
-  Khaireni Devdaha Rupandehi Nepal
-</div>
 
-<div class="contact-item">
-  <strong>Contact Number:</strong><br>
-  <a href="tel:9860374471">9860374471</a>
-</div>
+    <!-- VIDEO 1 -->
+    <div class="video-card">
 
-<p style="margin-top:20px;">
-  Feel free to connect with me.
-</p>
+      <h3>My First Video</h3>
 
-<a
-  href="https://www.facebook.com/share/19X4NkC9EV/"
-  target="_blank"
-  class="facebook">
-  Connect with me on Facebook
-</a>
+      <p>
+        Add your YouTube video below.
+      </p>
 
-  </section>  <footer>
-    <p>© 2026 Dr Reyn Pandey. All rights reserved.</p>
-  </footer></body>
+      <div class="video-container">
+
+        <!--
+          REPLACE YOUR_VIDEO_ID WITH YOUR ACTUAL YOUTUBE VIDEO ID.
+
+          Example:
+          If your YouTube link is:
+          https://www.youtube.com/watch?v=ABC123XYZ
+
+          Then use:
+          https://www.youtube.com/embed/ABC123XYZ
+        -->
+
+        <iframe
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="Dr. Reyn Pandey Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </div>
+
+
+    <!-- VIDEO 2 -->
+    <div class="video-card">
+
+      <h3>Another Video</h3>
+
+      <div class="video-container">
+
+        <iframe
+          src="https://www.youtube.com/embed/YOUR_SECOND_VIDEO_ID"
+          title="Dr. Reyn Pandey Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTERESTS -->
+  <section id="interests">
+
+    <h2>My Interests</h2>
+
+    <p>🩺 Dermatology & Medical Education</p>
+    <p>🎹 Piano & Music</p>
+    <p>🌏 Travel & Exploration</p>
+    <p>💻 Technology & Creativity</p>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+
+      <p><strong>Location:</strong> Khaireni, Devdaha, Rupandehi, Nepal</p>
+
+      <p><strong>Contact:</strong> 9860374471</p>
+
+      <p>
+        Feel free to connect with me and follow my journey.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 Dr. Reyn Pandey. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
 </html>
