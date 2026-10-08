@@ -110,6 +110,56 @@
       margin: 0 auto 12px;
     }
 
+    /* QUICK LINKS */
+    .quick-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+      flex-wrap: wrap;
+    }
+
+    .quick-link {
+      display: inline-block;
+      padding: 11px 24px;
+      background: #0b5d7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .quick-link:hover {
+      background: #168aad;
+      transform: translateY(-2px);
+    }
+
+    /* EDUCATION & WORK */
+    .timeline-item {
+      margin-bottom: 22px;
+      padding: 15px 18px;
+      background: #f5f8fb;
+      border-left: 4px solid #0b5d7a;
+      border-radius: 8px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item strong {
+      display: block;
+      color: #0b5d7a;
+      font-size: 17px;
+      margin-bottom: 3px;
+    }
+
+    .timeline-item span {
+      display: block;
+      color: #555;
+    }
+
     /* VIDEOS */
     .video-card {
       margin-top: 25px;
@@ -204,6 +254,14 @@
       section h2 {
         font-size: 25px;
       }
+
+      .quick-links {
+        gap: 10px;
+      }
+
+      .quick-link {
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
@@ -266,6 +324,94 @@
       through this platform.
     </p>
 
+    <!-- EDUCATION & WORK CLICK POINTS -->
+    <div class="quick-links">
+
+      <a href="#education" class="quick-link">
+        Education
+      </a>
+
+      <a href="#work" class="quick-link">
+        Work
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- EDUCATION -->
+  <section id="education">
+
+    <h2>Education</h2>
+
+    <div class="timeline-item">
+      <strong>Maharajgunj Medical Campus</strong>
+      <span>2024</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Nepalgunj Medical College</strong>
+      <span>July 2014 – 2020</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Vibrant Entrance Preparation</strong>
+      <span>2013</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Glorious College</strong>
+      <span>2010 – 2012</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Shree Kerwani Higher Secondary School</strong>
+      <span>School year 2010</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Devdaha Mother Tongues Academy</strong>
+    </div>
+
+  </section>
+
+
+  <!-- WORK -->
+  <section id="work">
+
+    <h2>Work</h2>
+
+    <div class="timeline-item">
+      <strong>Tribhuvan University Teaching Hospital</strong>
+      <span>Dermatology Resident Doctor</span>
+      <span>2024</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Edmond City Hospital, Butwal</strong>
+      <span>Medical Officer</span>
+      <span>2023 – 2024</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Neuro &amp; Allied Clinic, Bhairahawa</strong>
+      <span>Medical Officer</span>
+      <span>25 February 2021</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Dhakdhai Primary Health Center</strong>
+      <span>Medical Officer</span>
+      <span>6 January 2021</span>
+    </div>
+
+    <div class="timeline-item">
+      <strong>Devdaha Medical College and Research Institute</strong>
+      <span>Medical Officer</span>
+      <span>2021 – 2023</span>
+    </div>
+
   </section>
 
 
@@ -327,10 +473,10 @@
 
     <h2>Interests</h2>
 
-    <p>🩺 Dermatology & Medical Education</p>
-    <p>🎹 Piano & Music</p>
-    <p>🌏 Travel & Exploration</p>
-    <p>💻 Technology & Creativity</p>
+    <p>🩺 Dermatology &amp; Medical Education</p>
+    <p>🎹 Piano &amp; Music</p>
+    <p>🌏 Travel &amp; Exploration</p>
+    <p>💻 Technology &amp; Creativity</p>
 
   </section>
 
