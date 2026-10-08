@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Work | Dr. Reyn Pandey</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b5d7a, #168aad);
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 32px 28px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    }
+
+    section h2 {
+      color: #0b5d7a;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .work-item {
+      margin-bottom: 20px;
+      padding: 16px 18px;
+      background: #f5f8fb;
+      border-left: 4px solid #0b5d7a;
+      border-radius: 8px;
+    }
+
+    .work-item strong {
+      display: block;
+      color: #0b5d7a;
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
+
+    .work-item span {
+      display: block;
+      color: #555;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 11px 22px;
+      background: #0b5d7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .back-button:hover {
+      background: #168aad;
+    }
+
+    footer {
+      text-align: center;
+      background: #0b5d7a;
+      color: white;
+      padding: 25px 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+
+      header {
+        padding: 40px 15px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      section {
+        margin: 25px 12px;
+        padding: 25px 18px;
+      }
+
+      section h2 {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <header>
+    <h1>💼 Work</h1>
+  </header>
+
+
+  <section>
+
+    <h2>Dr. Reyn Pandey</h2>
+
+    <div class="work-item">
+      <strong>Tribhuvan University Teaching Hospital</strong>
+      <span>Dermatology Resident Doctor</span>
+      <span>2024</span>
+    </div>
+
+    <div class="work-item">
+      <strong>Edmond City Hospital, Butwal</strong>
+      <span>Medical Officer</span>
+      <span>2023 – 2024</span>
+    </div>
+
+    <div class="work-item">
+      <strong>Neuro &amp; Allied Clinic, Bhairahawa</strong>
+      <span>Medical Officer</span>
+      <span>25 February 2021</span>
+    </div>
+
+    <div class="work-item">
+      <strong>Dhakdhai Primary Health Center</strong>
+      <span>Medical Officer</span>
+      <span>6 January 2021</span>
+    </div>
+
+    <div class="work-item">
+      <strong>Devdaha Medical College and Research Institute</strong>
+      <span>Medical Officer</span>
+      <span>2021 – 2023</span>
+    </div>
+
+    <a href="index.html" class="back-button">
+      ← Back to Profile
+    </a>
+
+  </section>
+
+
+  <footer>
+    <p>© 2026 Dr. Reyn Pandey. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
