@@ -4,23 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Dr. Reyn Pandey | Personal Website</title>
+  <title>Dr. Reyn Pandey | Dermatology Resident Doctor</title>
+
   <meta name="description"
-        content="The personal website of Dr. Reyn Pandey, dermatology resident at Tribhuvan University Teaching Hospital, Kathmandu, Nepal.">
+        content="Dr. Reyn Pandey — Dermatology Resident Doctor from Nepal. Sharing professional interests, travel, technology, music and personal experiences.">
 
   <style>
-    :root {
-      --navy: #163b65;
-      --blue: #63a9d8;
-      --pale: #f2f8fd;
-      --white: #ffffff;
-      --text: #26384b;
-    }
-
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     html {
@@ -29,564 +22,399 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--white);
-      color: var(--text);
-      line-height: 1.7;
+      background: #f5f8fb;
+      color: #222;
+      line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
+    /* HEADER */
     header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(255, 255, 255, 0.96);
-      border-bottom: 1px solid #e5edf5;
-      backdrop-filter: blur(12px);
+      background: linear-gradient(135deg, #0b5d7a, #168aad);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
     }
 
-    nav {
-      max-width: 1150px;
-      margin: auto;
-      padding: 15px 22px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .brand {
-      color: var(--navy);
-      font-weight: 800;
-      font-size: 1.15rem;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      font-size: 0.92rem;
-    }
-
-    .nav-links a:hover {
-      color: var(--blue);
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      isolation: isolate;
-      background: linear-gradient(135deg, #eaf6ff, #ffffff 75%);
-      padding: 75px 22px 85px;
-    }
-
-    /* Decorative Himalayan mountain behind the profile */
-    .mountains {
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      opacity: 0.46;
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      max-width: 1050px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .profile-wrap {
-      position: relative;
-      width: 260px;
-      height: 260px;
-      margin: auto;
-    }
-
-    .profile-ring {
-      position: absolute;
-      inset: 0;
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
       border-radius: 50%;
       border: 5px solid white;
-      box-shadow: 0 12px 35px rgba(22, 59, 101, 0.18);
-      overflow: hidden;
-      background: #dcecf8;
+      margin-bottom: 18px;
     }
 
-    .profile-ring img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 6px;
     }
 
-    .hero-text .eyebrow {
-      color: #397fb4;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.8rem;
-      font-weight: 700;
+    header p {
+      font-size: 18px;
     }
 
-    h1 {
-      color: var(--navy);
-      font-size: clamp(2.3rem, 5vw, 3.7rem);
-      line-height: 1.15;
-      margin: 12px 0;
-    }
-
-    .subtitle {
-      color: #47708f;
-      font-size: 1.1rem;
-      margin-bottom: 15px;
-    }
-
-    .hero-description {
-      max-width: 570px;
-      margin-bottom: 25px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 11px 21px;
-      border-radius: 8px;
-      margin: 5px 8px 5px 0;
-      font-weight: 700;
-      font-size: 0.92rem;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 18px rgba(22, 59, 101, 0.13);
-    }
-
-    .button-primary {
-      background: var(--navy);
-      color: white;
-    }
-
-    .button-outline {
-      color: var(--navy);
-      border: 1px solid #b5cde1;
+    /* NAVIGATION */
+    nav {
       background: white;
-    }
-
-    section {
-      padding: 75px 22px;
-      scroll-margin-top: 75px;
-    }
-
-    .section-inner {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .section-heading {
-      color: var(--navy);
-      font-size: 2rem;
       text-align: center;
+      padding: 15px 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #0b5d7a;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #168aad;
+    }
+
+    /* MAIN SECTIONS */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 32px 28px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    }
+
+    section h2 {
+      color: #0b5d7a;
+      margin-bottom: 18px;
+      font-size: 28px;
+    }
+
+    section p {
       margin-bottom: 12px;
     }
 
-    .section-intro {
+    /* WELCOME */
+    .welcome {
       text-align: center;
-      max-width: 680px;
-      margin: 0 auto 38px;
-      color: #627487;
     }
 
-    #about {
-      background: white;
+    .welcome h2 {
+      font-size: 30px;
     }
 
-    .about-content {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      font-size: 1.05rem;
+    .welcome p {
+      font-size: 17px;
+      max-width: 700px;
+      margin: 0 auto 12px;
     }
 
-    #interests {
-      background: var(--pale);
+    /* SMALL EDUCATION & WORK LINKS */
+    .profile-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 18px;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 25px;
+    .profile-link {
+      color: #0b5d7a;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
     }
 
-    .card {
-      background: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 7px 28px rgba(27, 62, 93, 0.07);
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 15px 35px rgba(27, 62, 93, 0.13);
-    }
-
-    .card-image {
-      width: 100%;
-      height: 230px;
-      display: block;
-      object-fit: cover;
-      background: #e4eff8;
-    }
-
-    .card-content {
-      padding: 23px;
-    }
-
-    .card h3 {
-      color: var(--navy);
-      font-size: 1.3rem;
-      margin-bottom: 9px;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      margin-bottom: 17px;
-    }
-
-    .text-link {
-      color: #287cb6;
-      font-weight: 700;
-    }
-
-    .text-link:hover {
+    .profile-link:hover {
+      color: #168aad;
       text-decoration: underline;
     }
 
-    #contact {
-      text-align: center;
-      background: linear-gradient(135deg, #edf7ff, #ffffff);
+    /* VIDEOS */
+    .video-card {
+      margin-top: 25px;
+      padding: 20px;
+      background: #f5f8fb;
+      border-radius: 12px;
     }
 
-    .contact-content {
-      max-width: 650px;
-      margin: auto;
+    .video-card h3 {
+      margin-bottom: 12px;
+      color: #333;
     }
 
-    .contact-content p {
-      margin: 12px 0;
-    }
-
-    footer {
-      background: var(--navy);
+    .video-link {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #0b5d7a;
       color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .video-link:hover {
+      background: #168aad;
+    }
+
+    /* INTERESTS */
+    .interests p {
+      margin: 8px 0;
+      font-size: 17px;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: #eef7fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .whatsapp-link {
+      display: inline-block;
+      margin-top: 2px;
+      color: #25D366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .whatsapp-link:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
       text-align: center;
-      padding: 26px 20px;
-      font-size: 0.9rem;
+      background: #0b5d7a;
+      color: white;
+      padding: 25px 15px;
+      margin-top: 50px;
     }
 
-    footer p + p {
-      margin-top: 5px;
-      opacity: 0.85;
-    }
+    /* MOBILE */
+    @media (max-width: 600px) {
 
-    @media (max-width: 760px) {
-      nav {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
+      header {
+        padding: 40px 15px;
       }
 
-      .nav-links {
-        gap: 12px 16px;
-        font-size: 0.86rem;
+      header h1 {
+        font-size: 28px;
       }
 
-      .hero {
-        padding: 55px 20px 65px;
+      header p {
+        font-size: 16px;
       }
 
-      .hero-inner {
-        grid-template-columns: 1fr;
-        gap: 35px;
-        text-align: center;
+      .profile-photo {
+        width: 130px;
+        height: 130px;
       }
 
-      .profile-wrap {
-        width: 215px;
-        height: 215px;
-      }
-
-      .hero-description {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-        max-width: 440px;
-        margin: auto;
-      }
-
-      .card-image {
-        height: 240px;
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
       }
 
       section {
-        padding: 55px 20px;
+        margin: 25px 12px;
+        padding: 25px 18px;
+      }
+
+      section h2 {
+        font-size: 25px;
+      }
+
+      .profile-links {
+        gap: 16px;
+      }
+
+      .profile-link {
+        font-size: 14px;
       }
     }
   </style>
 </head>
 
+
 <body>
 
+  <!-- PROFILE HEADER -->
   <header>
-    <nav aria-label="Main navigation">
-      <a class="brand" href="#home">Dr. Reyn Pandey</a>
 
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#interests">Interests</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+    <img
+      src="profile.jpg"
+      alt="Dr. Reyn Pandey"
+      class="profile-photo"
+    >
+
+    <h1>Dr. Reyn Pandey</h1>
+
   </header>
 
-  <main>
-    <section class="hero" id="home">
 
-      <!-- Himalayan mountain backdrop -->
-      <svg class="mountains" viewBox="0 0 1440 650"
-           preserveAspectRatio="xMidYMid slice"
-           aria-hidden="true">
-        <defs>
-          <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#ffffff"/>
-            <stop offset="100%" stop-color="#a9cbe3"/>
-          </linearGradient>
-        </defs>
+  <!-- NAVIGATION -->
+  <nav>
 
-        <path d="M0 420 L210 180 L300 285 L470 90
-                 L650 335 L800 170 L1030 400 L1200 220
-                 L1440 410 L1440 650 L0 650 Z"
-              fill="#b6d4eb"/>
+    <a href="#home">Home</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
 
-        <path d="M210 180 L250 228 L280 217 L300 285
-                 L470 90 L530 175 L488 158 L465 185
-                 L445 166 L405 235 L300 285 Z"
-              fill="url(#snow)"/>
+  </nav>
 
-        <path d="M800 170 L845 230 L875 214 L920 278
-                 L1030 400 L800 170 L760 225 Z"
-              fill="url(#snow)"/>
 
-        <path d="M1200 220 L1245 280 L1275 262
-                 L1320 320 L1440 410 L1200 220 Z"
-              fill="url(#snow)"/>
-      </svg>
+  <!-- HOME / WELCOME -->
+  <section id="home" class="welcome">
 
-      <div class="hero-inner">
+    <h2>Welcome</h2>
 
-        <div class="profile-wrap">
-          <div class="profile-ring">
-            <img
-              src="reyn-pandey-profile.jpg"
-              alt="Dr. Reyn Pandey"
-              onerror="this.style.display='none'; this.parentElement.style.background='#dcecf8';">
-          </div>
-        </div>
+    <p>
+      Welcome to my personal profile.
+    </p>
 
-        <div class="hero-text">
-          <p class="eyebrow">Welcome to my personal profile</p>
+    <p>
+      I’m Dr. Reyn Pandey, currently pursuing my residency in Dermatology at Tribhuvan University Teaching Hospital (TUTH), Kathmandu.
+    </p>
 
-          <h1>Dr. Reyn Pandey</h1>
+  </section>
 
-          <p class="subtitle">
-            Dermatology Resident | Traveller | Pianist
-          </p>
 
-          <p class="hero-description">
-            I’m Dr. Reyn Pandey, currently pursuing my residency
-            in Dermatology at Tribhuvan University Teaching Hospital
-            (TUTH), Kathmandu.
-          </p>
+  <!-- ABOUT -->
+  <section id="about">
 
-          <a class="button button-primary" href="#about">
-            Explore My Profile
-          </a>
+    <h2>About Me</h2>
 
-          <a class="button button-outline"
-             href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
-             target="_blank" rel="noopener noreferrer">
-            YouTube
-          </a>
-        </div>
+    <p>
+      My interests extend beyond medicine to travel, technology,
+      creativity, and playing piano.
+    </p>
 
-      </div>
-    </section>
+    <p>
+      I enjoy learning, exploring new ideas, and sharing experiences
+      through this platform.
+    </p>
 
-    <section id="about">
-      <div class="section-inner">
-        <h2 class="section-heading">About Me</h2>
+    <!-- SMALL EDUCATION & WORK LINKS -->
+    <div class="profile-links">
 
-        <p class="section-intro">
-          A little about my professional journey and personal interests.
-        </p>
+      <a href="education.html" class="profile-link">
+        🎓 Education
+      </a>
 
-        <div class="about-content">
-          <p>
-            I am a dermatology resident at Tribhuvan University Teaching
-            Hospital (TUTH), Kathmandu, Nepal. Alongside medicine, I enjoy
-            creativity, technology, travelling, and playing piano.
-          </p>
-        </div>
-      </div>
-    </section>
+      <a href="work.html" class="profile-link">
+        💼 Work
+      </a>
 
-    <section id="interests">
-      <div class="section-inner">
+    </div>
 
-        <h2 class="section-heading">My Interests</h2>
+  </section>
 
-        <p class="section-intro">
-          Three areas that reflect my professional interests and
-          creativity beyond the clinic.
-        </p>
 
-        <div class="cards">
+  <!-- VIDEOS -->
+  <section id="videos">
 
-          <!-- DERMATOLOGY: dermatoscope examining skin -->
-          <article class="card">
-            <img
-              class="card-image"
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Dermascope.jpg"
-              alt="Dermatoscope used for examining skin"
-              loading="lazy">
+    <h2>Videos</h2>
 
-            <div class="card-content">
-              <h3>Dermatology</h3>
 
-              <p>
-                Exploring dermatology, clinical learning, dermoscopy,
-                and advances in the understanding of skin diseases.
-              </p>
+    <!-- DERMATOLOGY -->
+    <div class="video-card">
 
-              <a class="text-link"
-                 href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
-                 target="_blank" rel="noopener noreferrer">
-                YouTube →
-              </a>
-            </div>
-          </article>
+      <h3>🩺 Dermatology</h3>
 
-          <!-- TRAVEL -->
-          <article class="card">
-            <img
-              class="card-image"
-              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
-              alt="Snow-covered mountain peaks"
-              loading="lazy">
+      <a
+        href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
+        target="_blank"
+        class="video-link">
+        YouTube
+      </a>
 
-            <div class="card-content">
-              <h3>Travel</h3>
+    </div>
 
-              <p>
-                Discovering beautiful destinations, exploring new places,
-                and appreciating the natural beauty of Nepal and beyond.
-              </p>
 
-              <a class="text-link"
-                 href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
-                 target="_blank" rel="noopener noreferrer">
-                YouTube →
-              </a>
-            </div>
-          </article>
+    <!-- TRAVEL -->
+    <div class="video-card">
 
-          <!-- PIANO -->
-          <article class="card">
-            <img
-              class="card-image"
-              src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=900&q=85"
-              alt="Piano keys"
-              loading="lazy">
+      <h3>🌏 Travel</h3>
 
-            <div class="card-content">
-              <h3>Piano</h3>
+      <a
+        href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
+        target="_blank"
+        class="video-link">
+        YouTube
+      </a>
 
-              <p>
-                Enjoying piano, learning melodies, and sharing musical
-                performances as a creative outlet beyond medicine.
-              </p>
+    </div>
 
-              <a class="text-link"
-                 href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
-                 target="_blank" rel="noopener noreferrer">
-                YouTube →
-              </a>
-            </div>
-          </article>
 
-        </div>
-      </div>
-    </section>
+    <!-- PIANO -->
+    <div class="video-card">
 
-    <section id="contact">
-      <div class="section-inner contact-content">
+      <h3>🎹 Piano</h3>
 
-        <h2 class="section-heading">Let's Connect</h2>
+      <a
+        href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
+        target="_blank"
+        class="video-link">
+        YouTube
+      </a>
 
-        <p class="section-intro">
-          For professional connections, shared interests, and
-          creative collaborations.
-        </p>
+    </div>
 
-        <!-- Replace the placeholders with your real contact details -->
-        <p>
-          <strong>Contact:</strong>
-          <a class="text-link" href="mailto:YOUR_EMAIL@example.com">
-            YOUR_EMAIL@example.com
-          </a>
-        </p>
+  </section>
 
-        <p>
-          <strong>WhatsApp:</strong>
-          <a class="text-link"
-             href="https://wa.me/YOUR_NUMBER_WITH_COUNTRY_CODE">
-            Message me on WhatsApp
-          </a>
-        </p>
 
-        <p>
-          <a class="button button-primary"
-             href="YOUR_FACEBOOK_PROFILE_URL"
-             target="_blank" rel="noopener noreferrer">
-            Facebook
-          </a>
-        </p>
+  <!-- INTERESTS -->
+  <section id="interests" class="interests">
 
-      </div>
-    </section>
-  </main>
+    <h2>Interests</h2>
 
+    <p>🩺 Dermatology &amp; Medical Education</p>
+    <p>🎹 Piano &amp; Music</p>
+    <p>🌏 Travel &amp; Exploration</p>
+    <p>💻 Technology &amp; Creativity</p>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+
+      <p>
+        <strong>Location:</strong>
+        Khaireni, Devdaha, Rupandehi, Nepal
+      </p>
+
+      <p>
+        <strong>Contact:</strong>
+        9860374471
+      </p>
+
+      <a
+        href="https://wa.me/9779860374471"
+        target="_blank"
+        class="whatsapp-link">
+        💬 WhatsApp Me
+      </a>
+
+      <p>
+        Feel free to connect with me.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
   <footer>
-    <p><strong>Dr. Reyn Pandey</strong></p>
-    <p>Kathmandu, Nepal</p>
-    <p>© <span id="year"></span> Dr. Reyn Pandey. All rights reserved.</p>
-  </footer>
 
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
+    <p>© 2026 Dr. Reyn Pandey. All rights reserved.</p>
+
+  </footer>
 
 </body>
 </html>
