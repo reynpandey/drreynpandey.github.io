@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -183,6 +184,28 @@
       text-decoration: underline;
     }
 
+    /* A LITTLE MESSAGE BUTTON */
+    .message-button-container {
+      text-align: center;
+      margin-top: 22px;
+    }
+
+    .message-button {
+      display: inline-block;
+      padding: 10px 18px;
+      background-color: #1877f2;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .message-button:hover {
+      background-color: #105fc5;
+    }
+
     /* FOOTER */
     footer {
       text-align: center;
@@ -237,7 +260,6 @@
   </style>
 </head>
 
-
 <body>
 
   <!-- PROFILE HEADER -->
@@ -253,7 +275,6 @@
 
   </header>
 
-
   <!-- NAVIGATION -->
   <nav>
 
@@ -262,7 +283,6 @@
     <a href="#contact">Contact</a>
 
   </nav>
-
 
   <!-- HOME / WELCOME -->
   <section id="home" class="welcome">
@@ -278,7 +298,6 @@
     </p>
 
   </section>
-
 
   <!-- ABOUT -->
   <section id="about">
@@ -310,12 +329,10 @@
 
   </section>
 
-
   <!-- VIDEOS -->
   <section id="videos">
 
     <h2>Videos</h2>
-
 
     <!-- DERMATOLOGY -->
     <div class="video-card">
@@ -325,12 +342,12 @@
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
+        rel="noopener noreferrer"
         class="video-link">
         YouTube
       </a>
 
     </div>
-
 
     <!-- TRAVEL -->
     <div class="video-card">
@@ -340,12 +357,12 @@
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
+        rel="noopener noreferrer"
         class="video-link">
         YouTube
       </a>
 
     </div>
-
 
     <!-- PIANO -->
     <div class="video-card">
@@ -355,6 +372,7 @@
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
+        rel="noopener noreferrer"
         class="video-link">
         YouTube
       </a>
@@ -362,7 +380,6 @@
     </div>
 
   </section>
-
 
   <!-- INTERESTS -->
   <section id="interests" class="interests">
@@ -375,7 +392,6 @@
     <p>💻 Technology &amp; Creativity</p>
 
   </section>
-
 
   <!-- CONTACT -->
   <section id="contact">
@@ -397,6 +413,7 @@
       <a
         href="https://wa.me/9779860374471"
         target="_blank"
+        rel="noopener noreferrer"
         class="whatsapp-link">
         💬 WhatsApp Me
       </a>
@@ -407,8 +424,16 @@
 
     </div>
 
-  </section>
+    <!-- NEW MESSAGE BUTTON -->
+    <div class="message-button-container">
 
+      <a href="message.html" class="message-button">
+        ❤️ A Little Message for You
+      </a>
+
+    </div>
+
+  </section>
 
   <!-- FOOTER -->
   <footer>
