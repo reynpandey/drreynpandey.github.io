@@ -132,6 +132,25 @@
       text-decoration: underline;
     }
 
+    /* BIRTHDAY ICON */
+    .birthday-container {
+      text-align: center;
+    }
+
+    .birthday-icon {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 23px;
+      line-height: 1.4;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .birthday-icon:hover {
+      transform: scale(1.15);
+    }
+
     /* VIDEOS */
     .video-card {
       margin-top: 25px;
@@ -323,6 +342,21 @@
 
       <a href="work.html" class="profile-link">
         💼 Work
+      </a>
+
+    </div>
+
+    <!-- CLICKABLE BIRTHDAY ICON -->
+    <div class="birthday-container">
+
+      <a
+        href="https://wa.me/?text=Happy%20Birthday%2C%20Reyn!%20%F0%9F%8E%82%F0%9F%8E%89"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="birthday-icon"
+        aria-label="Send birthday wishes on WhatsApp"
+        title="Birthday wishes">
+        🎂
       </a>
 
     </div>
