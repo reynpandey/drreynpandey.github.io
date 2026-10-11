@@ -28,9 +28,14 @@
       line-height: 1.6;
     }
 
-    /* HEADER */
+    /* HEADER — MOUNTAIN BACKGROUND */
     header {
-      background: linear-gradient(135deg, #0b5d7a, #168aad);
+      background:
+        linear-gradient(
+          rgba(11, 93, 122, 0.15),
+          rgba(22, 138, 173, 0.15)
+        ),
+        url("background.png") center 35% / cover no-repeat;
       color: white;
       text-align: center;
       padding: 50px 20px;
@@ -201,80 +206,26 @@
       animation: float-balloon 6s linear infinite;
     }
 
-    .balloon-container span:nth-child(1) {
-      left: 3%;
-      animation-delay: 0s;
-    }
-
-    .balloon-container span:nth-child(2) {
-      left: 12%;
-      animation-delay: 2s;
-    }
-
-    .balloon-container span:nth-child(3) {
-      left: 21%;
-      animation-delay: 4s;
-    }
-
-    .balloon-container span:nth-child(4) {
-      left: 30%;
-      animation-delay: 1s;
-    }
-
-    .balloon-container span:nth-child(5) {
-      left: 39%;
-      animation-delay: 3s;
-    }
-
-    .balloon-container span:nth-child(6) {
-      left: 48%;
-      animation-delay: 0.5s;
-    }
-
-    .balloon-container span:nth-child(7) {
-      left: 57%;
-      animation-delay: 2.5s;
-    }
-
-    .balloon-container span:nth-child(8) {
-      left: 66%;
-      animation-delay: 4.5s;
-    }
-
-    .balloon-container span:nth-child(9) {
-      left: 75%;
-      animation-delay: 1.5s;
-    }
-
-    .balloon-container span:nth-child(10) {
-      left: 84%;
-      animation-delay: 3.5s;
-    }
-
-    .balloon-container span:nth-child(11) {
-      left: 92%;
-      animation-delay: 0.8s;
-    }
-
-    .balloon-container span:nth-child(12) {
-      left: 44%;
-      animation-delay: 5s;
-    }
+    .balloon-container span:nth-child(1) { left: 3%; animation-delay: 0s; }
+    .balloon-container span:nth-child(2) { left: 12%; animation-delay: 2s; }
+    .balloon-container span:nth-child(3) { left: 21%; animation-delay: 4s; }
+    .balloon-container span:nth-child(4) { left: 30%; animation-delay: 1s; }
+    .balloon-container span:nth-child(5) { left: 39%; animation-delay: 3s; }
+    .balloon-container span:nth-child(6) { left: 48%; animation-delay: 0.5s; }
+    .balloon-container span:nth-child(7) { left: 57%; animation-delay: 2.5s; }
+    .balloon-container span:nth-child(8) { left: 66%; animation-delay: 4.5s; }
+    .balloon-container span:nth-child(9) { left: 75%; animation-delay: 1.5s; }
+    .balloon-container span:nth-child(10) { left: 84%; animation-delay: 3.5s; }
+    .balloon-container span:nth-child(11) { left: 92%; animation-delay: 0.8s; }
+    .balloon-container span:nth-child(12) { left: 44%; animation-delay: 5s; }
 
     @keyframes float-balloon {
       0% {
         transform: translateY(0) rotate(-10deg);
         opacity: 0;
       }
-
-      15% {
-        opacity: 1;
-      }
-
-      85% {
-        opacity: 1;
-      }
-
+      15% { opacity: 1; }
+      85% { opacity: 1; }
       100% {
         transform: translateY(-280px) rotate(12deg);
         opacity: 0;
@@ -333,7 +284,7 @@
       text-decoration: underline;
     }
 
-    /* A LITTLE MESSAGE BUTTON */
+    /* MESSAGE BUTTON */
     .message-button-container {
       text-align: center;
       margin-top: 22px;
@@ -432,7 +383,6 @@
 
   <!-- PROFILE HEADER -->
   <header>
-
     <img
       src="profile.jpg"
       alt="Dr. Reyn Pandey"
@@ -440,7 +390,6 @@
     >
 
     <h1>Dr. Reyn Pandey</h1>
-
   </header>
 
   <!-- NAVIGATION -->
@@ -452,7 +401,6 @@
 
   <!-- HOME / WELCOME -->
   <section id="home" class="welcome">
-
     <h2>Welcome</h2>
 
     <p>
@@ -462,12 +410,10 @@
     <p>
       I’m Dr. Reyn Pandey, currently pursuing my residency in Dermatology at Tribhuvan University Teaching Hospital (TUTH), Kathmandu.
     </p>
-
   </section>
 
   <!-- ABOUT -->
   <section id="about">
-
     <h2>About Me</h2>
 
     <p>
@@ -482,7 +428,6 @@
 
     <!-- EDUCATION, WORK & BIRTHDAY -->
     <div class="profile-links">
-
       <a href="education.html" class="profile-link">
         🎓 Education
       </a>
@@ -501,7 +446,6 @@
         title="Birthday">
         🎂
       </button>
-
     </div>
 
     <!-- BIRTHDAY GREETING WITH ANIMATED BALLOONS -->
@@ -515,95 +459,61 @@
       <p>With Love ❤️</p>
 
       <div class="balloon-container" aria-hidden="true">
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
-        <span>🎈</span>
+        <span>🎈</span><span>🎈</span><span>🎈</span>
+        <span>🎈</span><span>🎈</span><span>🎈</span>
+        <span>🎈</span><span>🎈</span><span>🎈</span>
+        <span>🎈</span><span>🎈</span><span>🎈</span>
       </div>
-
     </div>
-
   </section>
 
   <!-- VIDEOS -->
   <section id="videos">
-
     <h2>Videos</h2>
 
-    <!-- DERMATOLOGY -->
     <div class="video-card">
-
       <h3>🩺 Dermatology</h3>
-
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
         rel="noopener noreferrer"
-        class="video-link">
-        YouTube
-      </a>
-
+        class="video-link">YouTube</a>
     </div>
 
-    <!-- TRAVEL -->
     <div class="video-card">
-
       <h3>🌏 Travel</h3>
-
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
         rel="noopener noreferrer"
-        class="video-link">
-        YouTube
-      </a>
-
+        class="video-link">YouTube</a>
     </div>
 
-    <!-- PIANO -->
     <div class="video-card">
-
       <h3>🎹 Piano</h3>
-
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
         rel="noopener noreferrer"
-        class="video-link">
-        YouTube
-      </a>
-
+        class="video-link">YouTube</a>
     </div>
-
   </section>
 
   <!-- INTERESTS -->
   <section id="interests" class="interests">
-
     <h2>Interests</h2>
 
     <p>🩺 Dermatology &amp; Medical Education</p>
     <p>🎹 Piano &amp; Music</p>
     <p>🌏 Travel &amp; Exploration</p>
     <p>💻 Technology &amp; Creativity</p>
-
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-
     <h2>Contact</h2>
 
     <div class="contact-box">
-
       <p>
         <strong>Location:</strong>
         Khaireni, Devdaha, Rupandehi, Nepal
@@ -625,37 +535,37 @@
       <p>
         Feel free to connect with me.
       </p>
-
     </div>
 
-    <!-- NEW MESSAGE BUTTON -->
     <div class="message-button-container">
-
       <a href="message.html" class="message-button">
         A Little Message for You ❤️
       </a>
-
     </div>
-
   </section>
 
   <!-- FOOTER -->
   <footer>
-
     <p>© 2026 Dr. Reyn Pandey. All rights reserved.</p>
-
   </footer>
 
   <!-- BIRTHDAY BUTTON FUNCTION -->
   <script>
-    const birthdayButton = document.getElementById("birthday-button");
-    const birthdayGreeting = document.getElementById("birthday-greeting");
+    const birthdayButton =
+      document.getElementById("birthday-button");
+
+    const birthdayGreeting =
+      document.getElementById("birthday-greeting");
 
     birthdayButton.addEventListener("click", function () {
       const isOpening = birthdayGreeting.hidden;
 
       birthdayGreeting.hidden = !isOpening;
-      birthdayButton.setAttribute("aria-expanded", String(isOpening));
+
+      birthdayButton.setAttribute(
+        "aria-expanded",
+        String(isOpening)
+      );
     });
   </script>
 
