@@ -35,7 +35,7 @@
           rgba(11, 93, 122, 0.15),
           rgba(22, 138, 173, 0.15)
         ),
-        url("background.png") center 35% / cover no-repeat;
+        url("background.jpg") center center / cover no-repeat;
       color: white;
       text-align: center;
       padding: 50px 20px;
@@ -206,26 +206,80 @@
       animation: float-balloon 6s linear infinite;
     }
 
-    .balloon-container span:nth-child(1) { left: 3%; animation-delay: 0s; }
-    .balloon-container span:nth-child(2) { left: 12%; animation-delay: 2s; }
-    .balloon-container span:nth-child(3) { left: 21%; animation-delay: 4s; }
-    .balloon-container span:nth-child(4) { left: 30%; animation-delay: 1s; }
-    .balloon-container span:nth-child(5) { left: 39%; animation-delay: 3s; }
-    .balloon-container span:nth-child(6) { left: 48%; animation-delay: 0.5s; }
-    .balloon-container span:nth-child(7) { left: 57%; animation-delay: 2.5s; }
-    .balloon-container span:nth-child(8) { left: 66%; animation-delay: 4.5s; }
-    .balloon-container span:nth-child(9) { left: 75%; animation-delay: 1.5s; }
-    .balloon-container span:nth-child(10) { left: 84%; animation-delay: 3.5s; }
-    .balloon-container span:nth-child(11) { left: 92%; animation-delay: 0.8s; }
-    .balloon-container span:nth-child(12) { left: 44%; animation-delay: 5s; }
+    .balloon-container span:nth-child(1) {
+      left: 3%;
+      animation-delay: 0s;
+    }
+
+    .balloon-container span:nth-child(2) {
+      left: 12%;
+      animation-delay: 2s;
+    }
+
+    .balloon-container span:nth-child(3) {
+      left: 21%;
+      animation-delay: 4s;
+    }
+
+    .balloon-container span:nth-child(4) {
+      left: 30%;
+      animation-delay: 1s;
+    }
+
+    .balloon-container span:nth-child(5) {
+      left: 39%;
+      animation-delay: 3s;
+    }
+
+    .balloon-container span:nth-child(6) {
+      left: 48%;
+      animation-delay: 0.5s;
+    }
+
+    .balloon-container span:nth-child(7) {
+      left: 57%;
+      animation-delay: 2.5s;
+    }
+
+    .balloon-container span:nth-child(8) {
+      left: 66%;
+      animation-delay: 4.5s;
+    }
+
+    .balloon-container span:nth-child(9) {
+      left: 75%;
+      animation-delay: 1.5s;
+    }
+
+    .balloon-container span:nth-child(10) {
+      left: 84%;
+      animation-delay: 3.5s;
+    }
+
+    .balloon-container span:nth-child(11) {
+      left: 92%;
+      animation-delay: 0.8s;
+    }
+
+    .balloon-container span:nth-child(12) {
+      left: 44%;
+      animation-delay: 5s;
+    }
 
     @keyframes float-balloon {
       0% {
         transform: translateY(0) rotate(-10deg);
         opacity: 0;
       }
-      15% { opacity: 1; }
-      85% { opacity: 1; }
+
+      15% {
+        opacity: 1;
+      }
+
+      85% {
+        opacity: 1;
+      }
+
       100% {
         transform: translateY(-280px) rotate(12deg);
         opacity: 0;
@@ -284,7 +338,7 @@
       text-decoration: underline;
     }
 
-    /* MESSAGE BUTTON */
+    /* A LITTLE MESSAGE BUTTON */
     .message-button-container {
       text-align: center;
       margin-top: 22px;
@@ -459,10 +513,18 @@
       <p>With Love ❤️</p>
 
       <div class="balloon-container" aria-hidden="true">
-        <span>🎈</span><span>🎈</span><span>🎈</span>
-        <span>🎈</span><span>🎈</span><span>🎈</span>
-        <span>🎈</span><span>🎈</span><span>🎈</span>
-        <span>🎈</span><span>🎈</span><span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
       </div>
     </div>
   </section>
@@ -471,31 +533,43 @@
   <section id="videos">
     <h2>Videos</h2>
 
+    <!-- DERMATOLOGY -->
     <div class="video-card">
       <h3>🩺 Dermatology</h3>
+
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
         rel="noopener noreferrer"
-        class="video-link">YouTube</a>
+        class="video-link">
+        YouTube
+      </a>
     </div>
 
+    <!-- TRAVEL -->
     <div class="video-card">
       <h3>🌏 Travel</h3>
+
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
         rel="noopener noreferrer"
-        class="video-link">YouTube</a>
+        class="video-link">
+        YouTube
+      </a>
     </div>
 
+    <!-- PIANO -->
     <div class="video-card">
       <h3>🎹 Piano</h3>
+
       <a
         href="https://youtube.com/@reynpandey9664?si=IjK8O02WTqS7mKOX"
         target="_blank"
         rel="noopener noreferrer"
-        class="video-link">YouTube</a>
+        class="video-link">
+        YouTube
+      </a>
     </div>
   </section>
 
@@ -537,6 +611,7 @@
       </p>
     </div>
 
+    <!-- MESSAGE BUTTON -->
     <div class="message-button-container">
       <a href="message.html" class="message-button">
         A Little Message for You ❤️
